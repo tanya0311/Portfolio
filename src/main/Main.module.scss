@@ -1,0 +1,40 @@
+@import "../styles/sass/variables.scss";
+@import "../styles/sass/mixins.scss";
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $bgMainColor;
+  
+  .particles {
+    position: absolute;
+    right: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  .mainText {
+    margin-top: 300px;
+    width: 400px;
+    span{
+      @include text($textFontFamily,  22px,  normal, 400);
+      color: $textHeaderColor;
+    }
+    h1{
+      @include text($titleFontFamily,  40px,   normal, 600);
+      color: $textHeaderColor;
+    }
+    .spanJob{
+      @include text($textFontFamily,  26px,  normal, 600);
+      color: $textHeaderColor;
+    }
+
+  }
+
+  .mainPhoto {
+    margin-top: 300px;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+  }
+}

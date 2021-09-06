@@ -1,0 +1,28 @@
+@import "../../styles/sass/variables.scss";
+@import "../../styles/sass/mixins.scss";
+
+.nav {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+    a {
+    text-decoration: none;
+    @include text($textFontFamily,  20px,  1.8, 600);
+    color: $textHeaderColor;
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+      color:$titleColor;
+      transition: 0.2s;
+    }
+  }
+  .active{
+    color:$titleColor;
+    transition: 0.2s;
+  }
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+}
+

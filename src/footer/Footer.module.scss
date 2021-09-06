@@ -1,0 +1,31 @@
+@import "../styles/sass/variables.scss";
+@import "../styles/sass/mixins.scss";
+
+.footerBlock {
+   background-color: $bgColor;
+
+   .footerContainer {
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+
+   .footerIcons {
+      width: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      a:hover{
+         opacity: 0.6;
+      }
+   }
+  
+   h4{
+      @include text($titleFontFamily,  24px,  1.2, 600);
+      margin: 30px 0 20px;
+   }
+   h5{
+      @include text($titleFontFamily,  14px,  1.2, 600);
+      margin: 0 0 20px;
+   }
+}

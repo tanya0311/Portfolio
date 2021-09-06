@@ -1,0 +1,17 @@
+@import  "./variables.scss";
+
+@mixin text ($fontFamily, $fontSize, $lineHeight, $fontWight) {
+   font-family: $fontFamily;
+			font-size: $fontSize;
+			line-height: $lineHeight;
+			font-weight:  $fontWight;
+         color: $titleTextColor;
+}
+
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justifyContent;
+	align-items: $alignItems;
+	flex-wrap: $wrap;
+ }

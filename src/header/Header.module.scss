@@ -1,0 +1,21 @@
+@import "../styles/sass/variables.scss";
+@import "../styles/sass/mixins.scss";
+
+.header {
+  position: fixed;
+  min-height: 100px;
+  width: 100%;
+  background-color: $bgHeaderColor;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+
+  .headerContainer {
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+  @media screen and (max-width: 400px) {
+    min-height: 70px;
+  }
+}
