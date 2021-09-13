@@ -8,9 +8,11 @@ import todoImg from "../assets/image/todoImg.png"
 
 const socialImg = {
   backgroundImage: `url(${social})`,
+  backgroundSize: 'cover'
 };
 const todoListImg = {
   backgroundImage: `url(${todoImg})`,
+  backgroundSize: 'cover'
 };
 
 function Projects() {
@@ -20,11 +22,9 @@ function Projects() {
       <div className={`${styleContainer.container} ${s.projectsContainer}`}>
         <Title title={'My Projects'}/>
       
-       
         <div className={s.projects}>
-          <ProjectItem style={socialImg} title={'Social network'} description={'описание ntttbdfcjkasb dfnal adkfnlkad ksnflknsdlkn lkdnlkcsdn  jadnbckandc'}/>
-          <ProjectItem style={todoListImg } title={'Todo list'} description={'описание'}/>
-   
+          <ProjectItem style={socialImg} title={'Social network'} description={' SPA with usage  React, Redux with Redux Thunk and RestAPI, React Hooks. For the layout of the sites were used Grid, Flexbox.'}/>
+          <ProjectItem style={todoListImg } title={'Todo list'} description={' SPA with usage React, Redux with Redux Thunk and RestAPI, React Hooks, Material UI'}/>
         </div>
       </div>
     </div>
