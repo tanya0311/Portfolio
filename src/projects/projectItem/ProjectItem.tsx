@@ -6,17 +6,18 @@ type ProjectItemType = {
 	projectHref?: string
 	codeHref?: string
 	style: { [key: string]: string }
+	linkViewProject:string
+  linkCode:string
 }
 
 function ProjectItem(props: ProjectItemType) {
 	return (
 		<div className={s.projectItem}>
 			<div className={s.imgProject} style={props.style}>
-				{/* <a href={props.projectHref}>ссылка на работу</a> */}
-				<a className={s.btnProject} href=''>
+				<a className={s.btnProject} href={props.linkViewProject} target='_blank'>
 					View project
 				</a>
-				<a className={s.btnProject} href=''>
+				<a className={s.btnProject} href={props.linkCode} target='_blank'>
 					View source code
 				</a>
 			</div>

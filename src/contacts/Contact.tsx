@@ -2,12 +2,15 @@ import React from "react"
 import s from "./Contacts.module.scss"
 import styleContainer from "./../common/styles/Container.module.css"
 import Title from "../components/Title/Title"
+import { Fade } from "react-awesome-reveal"
+
 
 function Contacts() {
 	return (
 		<div id='contacts' className={s.contactsBlock}>
 			<div className={`${styleContainer.container} ${s.contactsContainer}`}>
 				<Title title={"Contacts"} />
+				<Fade direction='up' >
 				<form className={s.contactForm}>
 					<input
 						className={s.contactFormInput}
@@ -25,9 +28,13 @@ function Contacts() {
 						placeholder={"Message"}
 					></textarea>
 				</form>
+				
+				</Fade  >
+				
 				<button className={s.submitBtn} type={"submit"}>
 					Send
 				</button>
+				
 			</div>
 		</div>
 	)

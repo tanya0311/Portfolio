@@ -81,6 +81,7 @@ function Skills() {
 				<Title title={"Skills"} />
 				<div className={s.skills}>
 					{skills.map((el, i) => (
+					
 						<SkillItem
 							key={i}
 							title={el.title}

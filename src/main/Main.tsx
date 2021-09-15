@@ -1,8 +1,12 @@
 import React from "react"
 import s from "./Main.module.scss"
 import styleContainer from "./../common/styles/Container.module.css"
-import Particles from "react-tsparticles"
 import ReactTypingEffect from "react-typing-effect"
+import Particles from "react-particles-js"
+import { Fade } from "react-awesome-reveal"
+import photo from "../assets/photo/photoMy.jpg"
+
+
 
 const particlesOptions = {
 	particles: {
@@ -10,21 +14,22 @@ const particlesOptions = {
 			value: 150,
 			density: {
 				enable: true,
-				value_area: 800,
+				value_area: 2000,
 			},
 		},
 		size: {
 			value: 3,
 		},
-	},
+	}
 }
-
 function Main() {
 	return (
 		<div id='main' className={s.mainBlock}>
 			<Particles className={s.particles} params={particlesOptions} />
+			
 			<div className={`${styleContainer.container} ${s.mainContainer}`}>
-				<div className={s.mainText}>
+				<Fade direction='down' >
+					<div className={s.mainText}>
 					<span>Hello</span>
 					<h1>My name is Tanya</h1>
 					<ReactTypingEffect
@@ -32,10 +37,14 @@ function Main() {
 						text="I'm Frontend Developer!"
 					/>
 				</div>
+				</Fade >
+				<Fade direction='up' >
 				<div className={s.mainPhoto}>
-					<img src='' alt='photo' />
+					<img src={photo} alt='photo' />
 				</div>
+				</Fade >
 			</div>
+			
 		</div>
 	)
 }

@@ -1,4 +1,4 @@
-import { faCertificate } from "@fortawesome/free-solid-svg-icons"
+import { faBars} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { useState } from "react"
 import { Link, animateScroll as scroll } from "react-scroll"
@@ -13,8 +13,6 @@ function BurgerNav() {
 	return (
 		<div className={s.burgerNav}>
 
-			
-			
 			<div className={menuIsOpen ? `${s.items} ${s.show}` : s.items}>
 				<Link
 					activeClass={s.active}
@@ -57,7 +55,7 @@ function BurgerNav() {
 					Contacts
 				</Link>
 			</div>
-			<div className={s.burgerBtn} onClick={onBurgerBtnClick}> <FontAwesomeIcon icon={faCertificate} className={s.icon} /></div>
+			<div className={s.burgerBtn} onClick={onBurgerBtnClick}> <FontAwesomeIcon icon={faBars} className={s.icon} /></div>
 		</div>
 		
 	)

@@ -4,21 +4,20 @@
 .mainBlock {
   min-height: 100vh;
   background-color: $bgMainColor;
-
+  position: relative;
   .particles {
     position: absolute;
-    right: 0;
+    top: 0; 
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.3;
+    opacity: 0.2;
   }
 
   .mainContainer {
-    // margin-top: 300px;
+    padding: 250px 0;
 
     .mainText {
-      margin-top: 300px;
       width: 400px;
 
       span {
@@ -38,14 +37,19 @@
 
     }
 
-    .mainPhoto {
-      width: 400px;
+    .mainPhoto  img{
+      // width: 400px;
       height: 400px;
+      margin-top: 50px;
+      border-radius: 5px;
       background-color: #fff;
         @media screen and (max-width: 750px) {
           width: 300px;
        }
     }
+    @media screen and (max-width: 500px) {
+      padding: 130px 0;
   }
-
+  }
+  
 }
