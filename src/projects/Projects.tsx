@@ -28,7 +28,7 @@ function Projects() {
 			title: "Todo list",
 			description:
 				" SPA with usage React, Redux with Redux Thunk and RestAPI, React Hooks, Material UI",
-			linkViewProject: "https://tanya0311.github.io/TodoList",
+			linkViewProject: "https://github.com/tanya0311/TodoList",
 			linkCode: "https://github.com/tanya0311/TodoList",
 			image: {
 				backgroundImage: `url(${todoImg})`,
