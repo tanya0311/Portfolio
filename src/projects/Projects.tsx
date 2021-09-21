@@ -6,6 +6,8 @@ import Title from "../components/Title/Title"
 import social from "../assets/image/social.png"
 import todoImg from "../assets/image/todoImg.png"
 import stepUp from "../assets/image/StepUp1.png"
+import coffee from "../assets/image/coffee.png"
+import products from "../assets/image/products.png"
 
 
 
@@ -13,9 +15,33 @@ function Projects() {
 
 	const projects = [
 		{
+			title: "Organic Products",
+			description:
+				"Responsive website design using HTML, CSS, JS. For the layout of the sites were used  Flexbox, Grid, Media queries.",
+			linkViewProject:
+				"https://tanya0311.github.io/products.github.io/",
+			linkCode: "https://github.com/tanya0311/products.github.io",
+			image: {
+				backgroundImage: `url(${products})`,
+				backgroundSize: "cover",
+			},
+		},
+		{
+			title: "Coffe website",
+			description:
+				"Responsive website design using HTML, CSS, JS. For the layout of the sites were used  Flexbox, Media queries.",
+			linkViewProject:
+				"https://tanya0311.github.io/coffee.github.io/",
+			linkCode: "https://github.com/tanya0311/coffee.github.io",
+			image: {
+				backgroundImage: `url(${coffee})`,
+				backgroundSize: "cover",
+			},
+		},
+		{
 			title: "Step up",
 			description:
-				"Responsive website design using HTML, CSS, jQuery. For the layout of the sites were used Grid, Flexbox.",
+				"Responsive website design using HTML, CSS, jQuery. For the layout of the sites were used Grid, Flexbox, Media queries.",
 			linkViewProject:
 				"https://tanya0311.github.io/courseWebsiteDesign.github.io/",
 			linkCode: "https://github.com/tanya0311/courseWebsiteDesign.github.io",
