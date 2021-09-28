@@ -1,26 +1,32 @@
-@import  "../../styles/sass/variables.scss";
+@import "../../styles/sass/variables.scss";
+
 .title {
-	margin: 70px 0 50px;
-	color: $titleColor;
-	text-transform: capitalize;
-	font-family: $titleFontFamily, sans-serif;
-	font-size: 36px;
-	line-height: 1.2;
-	letter-spacing: 3px;
+   margin: 70px 0 50px;
+   color: $titleColor;
+   text-transform: capitalize;
+   font-family: $titleFontFamily, sans-serif;
+   font-size: 36px;
+   line-height: 1.2;
+   letter-spacing: 3px;
    position: relative;
+
    h2 {
       margin: 0;
+
+      @media screen and (max-width: 430px) {
+         text-align: center;
+      }
    }
+
    & ::before {
-   content: "";
-   position: absolute;
-   width: 80px;
-   height: 3px;
-   background-color: $titleColor;
-   bottom: -20px;
-   left: 50%;
-   transform: translate(-50%,50%);
-}
-}
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 3px;
+      background-color: $titleColor;
+      bottom: -20px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+   }
 
-
+}

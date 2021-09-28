@@ -34,6 +34,9 @@
         @include text($textFontFamily, 26px, normal, 600);
         color: $textHeaderColor;
       }
+      @media screen and (max-width: 400px) {
+        width: 300px;
+     }
 
     }
 

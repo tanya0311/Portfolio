@@ -45,7 +45,6 @@ function Contacts() {
 		},
 		validate,
 		onSubmit: (values) => {
-			// alert(JSON.stringify(values) )
 			let { name, email, message } = values
 
 			// axios.post("http://localhost:3010/sendMessage", { name, email, message })
@@ -54,7 +53,6 @@ function Contacts() {
 					withCredentials: true
 				})
 				.then(() => {
-					//  alert('send')
 					formik.resetForm()
 				})
 		},

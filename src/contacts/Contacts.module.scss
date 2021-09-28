@@ -35,8 +35,11 @@
          outline: none;
       }
 
-      @media screen and (max-width: 750px) {
-         width: 80%;
+      @media screen and (max-width: 540px) {
+         width: 400px;
+      }
+      @media screen and (max-width: 430px) {
+         width: 300px;
       }
 
    }
