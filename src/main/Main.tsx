@@ -34,7 +34,7 @@ function Main() {
 					<h1>My name is Tanya</h1>
 					<ReactTypingEffect
 						className={s.spanJob}
-						text="I'm Frontend Developer!"
+						text="I'm Front-end Developer!"
 					/>
 				</div>
 				</Fade >

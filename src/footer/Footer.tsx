@@ -4,7 +4,8 @@ import styleContainer from "./../common/styles/Container.module.css"
 import FooterIcon from "./footerIcon/FooterIcon"
 import linkedinIcon from "../assets/icons/linkedin.svg"
 import phoneIcon from "../assets/icons/smartphone.svg"
-import telegramIcon from "../assets/icons//telegram.svg"
+import telegramIcon from "../assets/icons/telegram.svg"
+import mailIcon from "../assets/icons/mail.svg"
 
 const icons = {
 	linkedin: {
@@ -15,6 +16,9 @@ const icons = {
 	},
 	telegram: {
 		backgroundImage: `url(${telegramIcon})`,
+	},
+	mail: {
+		backgroundImage: `url(${mailIcon})`,
 	},
 }
 
@@ -34,6 +38,9 @@ function Footer() {
 					</a>
 					<a href='https://t.me/tanya0390'>
 						<FooterIcon style={icons.telegram} />
+					</a>
+					<a href="mailto:tanya03.11@mail.ru">
+						<FooterIcon style={icons.mail} />
 					</a>
 				</div>
 				<h4> Tatsiana Shulzhytskay</h4>
