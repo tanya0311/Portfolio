@@ -8,6 +8,7 @@ import todoImg from "../assets/image/todoImg.png"
 import stepUp from "../assets/image/StepUp1.png"
 import coffee from "../assets/image/coffee.png"
 import products from "../assets/image/products.png"
+import cards from "../assets/image/cards.png"
 
 
 
@@ -58,6 +59,17 @@ function Projects() {
 			linkCode: "https://github.com/tanya0311/TodoList",
 			image: {
 				backgroundImage: `url(${todoImg})`,
+				backgroundSize: "cover",
+			},
+		},
+		{
+			title: "Learning Cards",
+			description:
+				" SPA with usage React, Redux with Redux Thunk and RestAPI, React Hooks, Material UI",
+			linkViewProject: "https://tanya0311.github.io/cards",
+			linkCode: "https://github.com/tanya0311/cards",
+			image: {
+				backgroundImage: `url(${cards})`,
 				backgroundSize: "cover",
 			},
 		},

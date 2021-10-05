@@ -30,13 +30,13 @@ function Footer() {
 		<div className={s.footerBlock}>
 			<div className={`${styleContainer.container} ${s.footerContainer}`}>
 				<div className={s.footerIcons}>
-					<a href='https://www.linkedin.com/in/tatsiana-shulzhytskay-14a54821b/'>
+					<a href='https://www.linkedin.com/in/tatsiana-shulzhytskay-14a54821b/' target='_blank'>
 						<FooterIcon style={icons.linkedin} />
 					</a>
-					<a href={'tel:+375255026252'}>
+					<a href={'tel:+375255026252'} >
 						<FooterIcon style={icons.phone} />
 					</a>
-					<a href='https://t.me/tanya0390'>
+					<a href='https://t.me/tanya0390' target='_blank'>
 						<FooterIcon style={icons.telegram} />
 					</a>
 					<a href="mailto:tanya03.11@mail.ru">
